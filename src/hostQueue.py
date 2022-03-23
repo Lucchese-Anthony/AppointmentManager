@@ -18,7 +18,7 @@ class hostQueue:
             time.sleep(20)
             cursor = conn.execute("SELECT id, name, address, salary from COMPANY")
 
-
+    
 for row in cursor:
     print(f"ID = {row[0]}")
     print(f"NAME = {row[1]}")
