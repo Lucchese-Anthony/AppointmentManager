@@ -3,6 +3,7 @@ import os
 
 def main():
     path = os.getcwd()
+    
     if not os.path.isdir("database"):
         os.mkdir("database")
     os.chdir(f"{os.getcwd()}/database/")
@@ -14,6 +15,7 @@ def main():
         );"""
     conn = sqlite3.connect('appointments.db')
     print("successfully created the database")
+
     otherInputs = str(input("The default table contains:\n- Appointment ID\n- User ID\n- Meeting Topic\n- email address\n Is that ok? (y/n)> "))
     if otherInputs == "n":
         print("exiting program")
