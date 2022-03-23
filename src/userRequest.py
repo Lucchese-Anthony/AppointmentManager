@@ -1,9 +1,10 @@
 # userRequest.py 
+from hostQueue import hostQueue
 
-import sockets
 
 
 def main():
+
     return
 
 if __name__ == "__main__":
