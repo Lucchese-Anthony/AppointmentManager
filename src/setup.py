@@ -18,7 +18,7 @@ def main():
 
     otherInputs = str(input("The default table contains:\n- Appointment ID\n- User ID\n- Meeting Topic\n- email address\n Is that ok? (y/n)> "))
     if otherInputs == "n":
-        print("exiting program")
+        print("please edit the code to include the rows you would prefer\nexiting program...")
         exit()
     conn.execute(query)
     print("Successfully created the table...")
